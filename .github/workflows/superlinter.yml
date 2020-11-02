@@ -14,12 +14,21 @@ jobs:
 
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Checkout code
-        uses: actions/checkout@v2
+      # - name: Checkout code
+        # uses: actions/checkout@v2
 
       # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
+      # - name: Run Super-Linter
+      #   uses: github/super-linter@v3
+      #   env:
+      #     DEFAULT_BRANCH: master
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # custom
+      - name: test
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          A: B
+          S1: ${{ secrets.S1 }}
+      - run: bash ./tools/publish.sh
