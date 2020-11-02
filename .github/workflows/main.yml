@@ -27,10 +27,10 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # custom
-      - name: aaaa
+      - name: buildaa
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           A: B
           S1: ${{ secrets.S1 }}
-        run: pwd && bash .tools/publish.sh
+        run: pwd && bash ./tools/publish.sh
