@@ -27,7 +27,7 @@ jobs:
       # custom
       - name: aaaa
         env:
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           A: B
           S1: ${{ secrets.S1 }}
