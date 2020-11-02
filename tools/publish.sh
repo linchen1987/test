@@ -1,3 +1,7 @@
 echo "node version"
 node -v
-echo ""
+echo ""¸
+
+echo "gem"
+type gem
+echo ""¸
