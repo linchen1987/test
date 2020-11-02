@@ -32,4 +32,4 @@ jobs:
           A: B
           S1: ${{ secrets.S1 }}
         # run: pwd && bash ../../tools/publish.sh
-        run: pwd && ls
+        run: echo a && pwd && ls -a
