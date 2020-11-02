@@ -9,14 +9,14 @@ echo ""¸
 
 echo "gem"
 type gem
-gem install travis
+sudo gem install travis
 type travis
 echo ""¸
 
 echo 'install @abtnode/cli'
 type npm
 npm bin -g
-npm install -g @abtnode/cli
+sudo npm install -g @abtnode/cli
 
 echo abtnode version
 echo $PATH
