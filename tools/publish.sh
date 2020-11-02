@@ -14,5 +14,4 @@ npm install -g @abtnode/cli
 
 echo abtnode version
 echo $PATH
-npm
 abtnode -V
