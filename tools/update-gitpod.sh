@@ -19,7 +19,8 @@ repos=(
 )
 for repo_name in "${repos[@]}"; do
   echo "------- begin ${repo_name} -------"
-  git clone git@github.com:blocklet/$repo_name.git
+  # git clone git@github.com:blocklet/$repo_name.git
+  git clone https://$GITHUB_TOKEN@github.com/blocklet/$repo_name.git
   cd $repo_name
   cur_ver=$(cat .gitpod.Dockerfile | grep '@abtnode/cli' |  awk -F '@abtnode/cli@' '{print $2}')
   echo "cur_ver: ${cur_ver}"
