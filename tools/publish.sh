@@ -1,1 +1,3 @@
-echo "test pr 22222"
+echo "node version"
+node -v
+echo ""
