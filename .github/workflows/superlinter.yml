@@ -31,4 +31,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           A: B
           S1: ${{ secrets.S1 }}
-        run: pwd && bash ../../tools/publish.sh
+        run: pwd && bash .tools/publish.sh
