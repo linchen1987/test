@@ -27,11 +27,11 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # custom
-      - name: buildaa
+      - name: Test Job
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           A: B
           S1: ${{ secrets.S1 }}
-          NPM_CONFIG_PREFIX: "~/.npm-global"
+          # NPM_CONFIG_PREFIX: "~/.npm-global"
         run: pwd && bash ./tools/publish.sh

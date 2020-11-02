@@ -1,3 +1,8 @@
+echo who
+whoami
+sudo su
+whoami
+
 echo "node version"
 node -v
 echo ""¸
@@ -10,6 +15,7 @@ echo ""¸
 
 echo 'install @abtnode/cli'
 type npm
+npm bin -g
 npm install -g @abtnode/cli
 
 echo abtnode version
