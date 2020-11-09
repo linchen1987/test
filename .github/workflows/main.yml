@@ -5,6 +5,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      name:
+        description: name
+        required: false
+        default: linchen
+        
 
 jobs:
   # Set the job key. The key is displayed as the job name
