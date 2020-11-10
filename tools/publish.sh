@@ -6,7 +6,7 @@ whoami
 echo "node version"
 node -v
 echo ""¸
-npm install -g @octokit/core
+sudo npm install -g @octokit/core
 
 echo "gem"
 type gem
