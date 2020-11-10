@@ -25,6 +25,8 @@ type gem
 
 # node tools/node.js
 
+git config --local user.name "linchen1987"
+git config --local user.email "linchen.1987@foxmail.com"
 DATE=`date`
 echo $DATE
 git branch -a
