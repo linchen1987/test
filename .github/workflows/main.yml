@@ -20,6 +20,8 @@ jobs:
     # name: Lint code base
     # Set the type of machine to run on
     runs-on: ubuntu-latest
+    
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
     steps:
       - name: Cancel
