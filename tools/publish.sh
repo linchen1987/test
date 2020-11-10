@@ -23,4 +23,14 @@ type gem
 # echo $PATH
 # abtnode -V
 
-node tools/node.js
+# node tools/node.js
+
+DATE=`date`
+echo $DATE
+git branch -a
+echo $DATE >> testcommit
+git add .
+git status
+git commit -m '[skip ci] test auto commit'
+git push origin main
+echo "done"
