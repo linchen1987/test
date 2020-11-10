@@ -14,10 +14,10 @@ type gem
 # type travis
 # echo ""¸
 
-echo 'install @abtnode/cli'
-type npm
-npm bin -g
-sudo npm install -g @abtnode/cli
+# echo 'install @abtnode/cli'
+# type npm
+# npm bin -g
+# sudo npm install -g @abtnode/cli
 
 # echo abtnode version
 # echo $PATH
