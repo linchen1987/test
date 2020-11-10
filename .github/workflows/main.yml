@@ -22,13 +22,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Cancel
+        uses: rokroskar/workflow-run-cleanup-action@v0.2.2
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - uses: n1hility/cancel-previous-runs@v2
-        with: 
-          token: ${{ secrets.GITHUB_TOKEN }}
+#       - uses: n1hility/cancel-previous-runs@v2
+#         with: 
+#           token: ${{ secrets.GITHUB_TOKEN }}
       
 #       - name: cancel running workflows
 #         uses: everphone-gmbh/cancel-previous-workflows@v5
