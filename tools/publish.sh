@@ -21,3 +21,5 @@ sudo npm install -g @abtnode/cli
 echo abtnode version
 echo $PATH
 abtnode -V
+
+node tools/node.js
