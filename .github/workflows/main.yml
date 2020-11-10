@@ -24,12 +24,11 @@ jobs:
     if: "! contains(toJSON(github.event.commits.*.message), '[skip ci]')"
 
     steps:
-      - name: Cancel
-        uses: rokroskar/workflow-run-cleanup-action@v0.2.2
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+#       - name: Cancel
+#         uses: rokroskar/workflow-run-cleanup-action@v0.2.2
+#         env:
+#           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
-      # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
       
@@ -42,20 +41,24 @@ jobs:
 #         env:
 #           GITHUB_TOKEN: ${{ github.token }}
 
-      # Runs the Super-Linter action
-      # - name: Run Super-Linter
-      #   uses: github/super-linter@v3
-      #   env:
-      #     DEFAULT_BRANCH: master
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Run Super-Linter
+#         uses: github/super-linter@v3
+#         env:
+#           DEFAULT_BRANCH: master
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # custom
-      - name: Test Job
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          A: B
-          S1: ${{ secrets.S1 }}
-          # NPM_CONFIG_PREFIX: "~/.npm-global"
-        run: pwd && bash ./tools/publish.sh
-#         run: bash ./tools/update-gitpod.sh
+      - name: step1
+        run: echo s1 && echo step1 >> test.md
+        
+      - name: step2
+        run: echo s2 && cat test.md && echo step2 >> test.md
+      - name: step3
+        run: echo s3 && cat test.md
+
+#       - name: Test Job
+#         env:
+#           DEFAULT_BRANCH: main
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           A: B
+#           S1: ${{ secrets.S1 }}
+#         run: pwd && bash ./tools/publish.sh
