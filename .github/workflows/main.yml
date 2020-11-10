@@ -41,5 +41,5 @@ jobs:
           A: B
           S1: ${{ secrets.S1 }}
           # NPM_CONFIG_PREFIX: "~/.npm-global"
-        # run: pwd && bash ./tools/publish.sh
-        run: bash ./tools/update-gitpod.sh
+        run: pwd && bash ./tools/publish.sh
+#         run: bash ./tools/update-gitpod.sh
