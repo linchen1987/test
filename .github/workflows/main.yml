@@ -25,6 +25,12 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+      
+      
+      - name: cancel running workflows
+        uses: everphone-gmbh/cancel-previous-workflows@v5
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       # Runs the Super-Linter action
       # - name: Run Super-Linter
