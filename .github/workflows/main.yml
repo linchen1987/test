@@ -46,6 +46,12 @@ jobs:
 #         env:
 #           DEFAULT_BRANCH: master
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - id: foo
+        uses: linchen1987/test-meta
+        with:
+          who-to-greet: 'xiao a'
+      - run: echo random-number ${{ steps.foo.outputs.random-number }} 
+        shell: bash
 
       - name: step1
         run: echo "a=b" >> $GITHUB_ENV && echo 1111-----$a
