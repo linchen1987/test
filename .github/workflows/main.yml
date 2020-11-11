@@ -47,7 +47,7 @@ jobs:
 #           DEFAULT_BRANCH: master
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: foo
-        uses: linchen1987/test-github-actions@v2
+        uses: linchen1987/test-github-actions@v3
         with:
           who-to-greet: 'xiao a'
 
