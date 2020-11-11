@@ -46,8 +46,14 @@ jobs:
 #         env:
 #           DEFAULT_BRANCH: master
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - id: foo
-        uses: linchen1987/test-github-actions@v4
+      - name: Checkout Actions
+        uses: actions/checkout@v2
+        with:
+          repository: linchen1987/test-github-actions@v4
+          ref: v4
+          token: ${{ secrets.GIT_HUB_TOKEN }} # stored in GitHub secrets
+          path: .github/actions/my-action
+      - uses: .github/actions/my-action
         with:
           who-to-greet: 'xiao a'
 
