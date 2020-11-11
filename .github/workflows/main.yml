@@ -49,7 +49,7 @@ jobs:
       - name: Checkout Actions
         uses: actions/checkout@v2
         with:
-          repository: linchen1987/test-github-actions@v4
+          repository: linchen1987/test-github-actions
           ref: v4
           token: ${{ secrets.GITHUB_TOKEN }} # stored in GitHub secrets
           path: .github/actions/my-action
