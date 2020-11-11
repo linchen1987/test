@@ -48,12 +48,9 @@ jobs:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: step1
-        run: echo s1 && echo step1 >> test.md
-        
+        run: a=b && echo 1111-----$a
       - name: step2
-        run: echo s2 && cat test.md && echo step2 >> test.md
-      - name: step3
-        run: echo s3 && cat test.md
+        run: echo 2222----$a
 
 #       - name: Test Job
 #         env:
