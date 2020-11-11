@@ -53,7 +53,7 @@ jobs:
           ref: v4
           token: ${{ secrets.GIT_HUB_TOKEN }} # stored in GitHub secrets
           path: .github/actions/my-action
-      - uses: .github/actions/my-action
+      - uses: ./.github/actions/my-action
         with:
           who-to-greet: 'xiao a'
 
