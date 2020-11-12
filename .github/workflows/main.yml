@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: step1
-        run: sudo chown -R $USER /usr/local/lib/node_modules
+        run: sudo chown -R $USER /usr/local
       - name: step2
         run: npm install -g @abtnode/cli
       - name: step3
