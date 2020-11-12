@@ -1,0 +1,26 @@
+{
+  "name": "react-demo",
+  "description": "Blocklet from /Users/linchen/code/blocklet/react-demo",
+  "group": "static",
+  "version": "0.1.0",
+  "main": "build",
+  "publicUrl": "/",
+  "charging": {
+    "price": 0
+  },
+  "color": "primary",
+  "capabilities": {
+    "dynamicPathPrefix": true
+  },
+  "scripts": {
+    "dev": "npm run start"
+  },
+  "gitHash": "a11378149b36c612162d34b6b220eb42bedcbde5",
+  "specVersion": "1.0.0",
+  "path": "/static/react-demo",
+  "dist": {
+    "tarball": "https://github.com/linchen1987/test/releases/download/test2/react-demo-0.1.0.tgz",
+    "integrity": "sha512-Sipb1k5A4JU5eYgDQl+hwZAxalTC3XnCLI4i4HE64RHCt02T/nnwr6YJYkX5Bx2NQOThAXP40Qb5ERJgVQfyZQ==",
+    "shasum": "9659922d3623a4118c4b7fd986f28f91d5449fb5"
+  }
+}
