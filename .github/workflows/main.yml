@@ -31,27 +31,12 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2
-      
-#       - uses: n1hility/cancel-previous-runs@v2
-#         with: 
-#           token: ${{ secrets.GITHUB_TOKEN }}
-      
-#       - name: cancel running workflows
-#         uses: everphone-gmbh/cancel-previous-workflows@v5
-#         env:
-#           GITHUB_TOKEN: ${{ github.token }}
-
-#       - name: Run Super-Linter
-#         uses: github/super-linter@v3
-#         env:
-#           DEFAULT_BRANCH: master
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: step1
+        run: echo NPM_CONFIG_PREFIX=~/.npm-global >> $GITHUB_ENV
+      - name: step2
         run: npm install -g @abtnode/cli
-#       - name: step2
-#         run: echo 2222----$a $b $c $d
-
+# 
 #       - name: Test Job
 #         env:
 #           DEFAULT_BRANCH: main
