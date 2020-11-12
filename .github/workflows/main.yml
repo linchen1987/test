@@ -36,6 +36,8 @@ jobs:
         run: echo NPM_CONFIG_PREFIX=~/.npm-global >> $GITHUB_ENV
       - name: step2
         run: npm install -g @abtnode/cli
+      - name: step3
+        run: type abtnode
 # 
 #       - name: Test Job
 #         env:
