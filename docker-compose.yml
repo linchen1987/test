@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    abtnode:
+        image: arcblock/abtnode
+        ports:
+            - '80:80'
+        volumes:
+            - ./abtnode-data:/data/abtnode
+
+volumes:
+    abtnode-data:
