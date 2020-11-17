@@ -1,0 +1,59 @@
+{
+  "name": "blockchain-manager",
+  "description": "Official blocklet to help you manage forge powered chain nodes",
+  "group": "dapp",
+  "provider": "arcblock",
+  "version": "1.0.20",
+  "main": "api/index.js",
+  "title": "Blockchain Manager",
+  "publicUrl": "",
+  "adminUrl": "/",
+  "configUrl": "",
+  "docUrl": "",
+  "logoUrl": "/static/7cad2e6000273fd5deeb95bbb4eda489/logo.png",
+  "logo": "logo.png",
+  "author": "zhangzhenqaing <zhenqiang@arcblock.io> https://github.com/polunzh",
+  "color": "primary",
+  "community": "https://community.arcblockio.cn",
+  "keywords": [
+    "forge",
+    "dapp",
+    "node",
+    "blockchain"
+  ],
+  "screenshots": [
+    "/static/350de6e62c61bfed7da1eb438369afe9/5-downloaded-releases.png",
+    "/static/fce9cc4595e6d15a5f47ec34989b20bf/2-chain-process.png",
+    "/static/1fdc10545874a332710dd54583b02c36/3-chain-create.png",
+    "/static/d55f80f64eba73226dd266639cacc1b3/4-all-releases.png",
+    "/static/f65f6d2cbf25e00613083c777e352acc/0-chain-list.png",
+    "/static/4051b614f422c2f13d545be169bdab02/1-chain-overview.png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArcBlock/abt-node/tree/master/blocklets/forge-release-manager"
+  },
+  "support": "support@arcblock.io",
+  "hooks": {
+    "pre-deploy": "npm run build",
+    "pre-stop": "node api/libs/hooks/pre-stop.js"
+  },
+  "path": "/dapp/blockchain-manager",
+  "folder": "/home/travis/build/ArcBlock/blocklets/.cache/gatsby-source-npmjs/blockchain-manager/1.0.20",
+  "capabilities": {
+    "dynamicPathPrefix": true
+  },
+  "charging": {
+    "price": 0
+  },
+  "did": "z8iZn18zGRm5veEdhmrS2FRrUyw5ZAQcewVMH",
+  "stats": {
+    "downloads": 9405,
+    "updated_at": "2020-10-22T00:23:11.812Z"
+  },
+  "dist": {
+    "22tarball": "https://registry.npm.taobao.org/blockchain-manager/download/blockchain-manager-1.0.20.tgz",
+    "tarball": "https://github.com/linchen1987/test/releases/download/test2/blockchain-manager-1.0.20.tgz",
+    "integrity": "sha512-zxoOVtfst7FUzZGVU/YrjNo3461iE4vIx5OP60WKQ0cGbZKZ3rUf13z/jO3lI+NJPqOgUPlKEIxRHhbpVGpkyg=="
+  }
+}
