@@ -6,7 +6,7 @@ services:
         ports:
             - '80:80'
         volumes:
-            - ./abtnode-data:/data/abtnode
+            - abtnode-data:/data/abtnode
 
 volumes:
     abtnode-data:
