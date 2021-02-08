@@ -5,4 +5,4 @@ ENV PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 ENV ABT_NODE_HTTP_PORT=8080
 
 RUN brew install nginx \
-  && npm install -g @abtnode/cli@1.0.32
+  && npm install -g @abtnode/cli@1.1.18
