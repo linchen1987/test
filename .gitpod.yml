@@ -1,14 +1,18 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: npm install && abtnode init -f --no-https
+  - init: abtnode init -f --no-https
     command: abtnode start
 ports:
-  - port: 8080
-    onOpen: ignore
-  - port: 4430
+  - port: 8088
     onOpen: ignore
   - port: 8089
     onOpen: ignore
-  - port: 8090
+  - port: 40404
+    onOpen: ignore
+  - port: 40405
+    onOpen: ignore
+  - port: 40406
+    onOpen: ignore
+  - port: 40407
     onOpen: ignore
