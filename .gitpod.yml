@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: abtnode init -f --no-https
-    command: abtnode start
+    command: abtnode start && node echo-endpoint.js
 ports:
   - port: 8080
     onOpen: open-browser
