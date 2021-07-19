@@ -5,8 +5,8 @@ tasks:
     command: abtnode start
 ports:
   - port: 8080
-    - onOpen: open-browser
-    - visibility: public
+    onOpen: open-browser
+    visibility: public
   - port: 8088
     onOpen: ignore
   - port: 8089
